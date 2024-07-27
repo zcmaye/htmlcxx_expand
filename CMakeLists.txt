@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.10)
 
-project(CppHtml_expand CXX)
+project(htmlcxx_expand CXX)
 
 option(BUILD_TESTS "Create test target for htmlcxx" ON)
 
@@ -18,9 +18,9 @@ file(GLOB XPATH_SOURCES "src/xpath/*.cpp")
 
 include_directories("src/html" "src/xpath")
 
-add_library(CppHtml_expand ${HTML_SOURCES} ${XPATH_SOURCES})
+add_library(htmlcxx_expand ${HTML_SOURCES} ${XPATH_SOURCES})
 
-target_include_directories(CppHtml_expand
+target_include_directories(htmlcxx_expand
   PUBLIC
     $<INSTALL_INTERFACE:include>    
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -28,12 +28,12 @@ target_include_directories(CppHtml_expand
     ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 if(NOT BUILD_SHARED_LIBS)
-  target_compile_definitions(CppHtml_expand PUBLIC "CPPHTML_STATIC")
+  target_compile_definitions(htmlcxx_expand PUBLIC "CPPHTML_STATIC")
 endif()
 
 install(FILES ${HTML_HEADERS} "src/html/ParserSax.tcc" ${XPATH_HEADERS} DESTINATION include/html)
 install(FILES ${XPATH_HEADERS} DESTINATION include/xpath)
-install(TARGETS CppHtml_expand RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+install(TARGETS htmlcxx_expand RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
 
 message(STATUS ${BUILD_TESTS})
 
@@ -41,5 +41,5 @@ if(BUILD_TESTS)
   include_directories("src")
   file(GLOB TEST_SOURCE "test/*.cpp")
   add_executable(test ${TEST_SOURCE})
-  target_link_libraries(test CppHtml_expand)
+  target_link_libraries(test htmlcxx_expand)
 endif()
