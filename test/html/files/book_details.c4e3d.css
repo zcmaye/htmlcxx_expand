@@ -1,0 +1,2436 @@
+@charset 'UTF-8';
+.type-rec-wrap li .book-info .author {
+  overflow: hidden
+}
+/*!* 防止滚动条抖动 *!
+html {
+	overflow-y: scroll;
+}
+:root {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+body {
+	overflow: hidden;
+	width: 100%;
+	width: 100vw;
+}
+:root body {
+	position: absolute;
+}*/
+.g_site_hongxiu .wrap-body {
+  position: relative;
+  z-index: 1
+}
+.g_site_hongxiu .wrap-body .flower {
+  position: absolute;
+  z-index: 1;
+  top: -16px;
+  background-repeat: no-repeat
+}
+.g_site_hongxiu .wrap-body .flower.left {
+  left: 0;
+  width: 384px;
+  height: 269px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/flower_left.0bed9.png)
+}
+.g_site_hongxiu .wrap-body .flower.right {
+  right: 0;
+  width: 499px;
+  height: 243px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/flower_right.593cb.png)
+}
+.book-content-wrap {
+  margin-bottom: 50px
+}
+.chapter-wrap {
+  padding: 20px 20px 10px 20px;
+  background: var(--sheet-background-bw-white)
+}
+.center1020 {
+  width: 1020px;
+  margin: 0 auto
+}
+.top-bg-box {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover
+}
+.top-bg-box.rec-book {
+  height: 338px
+}
+.top-bg-box .back-to-op {
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 17px;
+  height: 24px;
+  padding: 0 8px;
+  cursor: pointer;
+  color: #fff;
+  background: #666;
+  background: rgba(0,0,0,.3)
+}
+.top-bg-op-box {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover
+}
+.top-bg-op-box a {
+  position: absolute
+}
+.top-bg-op-box .jumpWrap {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 338px
+}
+.top-bg-op-box .jumpWrap .op-tag {
+  right: 27px
+}
+.top-bg-op-box .close-game-op {
+  font-size: 14px;
+  line-height: 24px;
+  z-index: 5;
+  top: 0;
+  right: 17px;
+  height: 24px;
+  padding: 0 8px;
+  color: #fff;
+  background: #666;
+  background: rgba(0,0,0,.3)
+}
+.top-bg-op-box .box-center {
+  position: relative;
+  z-index: 1
+}
+.top-bg-op-box .box-center .petal {
+  position: absolute;
+  z-index: 1;
+  top: -40px
+}
+.top-bg-op-box .box-center .petal.p1 {
+  right: 0;
+  width: 60px;
+  height: 29px;
+  animation: petal 6s 1s infinite ease-out;
+  background: url(/pro/hongxiu_pc/_prelease/images/book_details/petal_1.png) no-repeat
+}
+.top-bg-op-box .box-center .petal.p2 {
+  right: 300px;
+  width: 44px;
+  height: 29px;
+  animation: petal 5.5s 2s infinite ease-out;
+  background: url(/pro/hongxiu_pc/_prelease/images/book_details/petal_2.png) no-repeat
+}
+.top-bg-op-box .box-center .petal.p3 {
+  right: 500px;
+  width: 32px;
+  height: 20px;
+  animation: petal 4.5s 1.5s infinite ease-out;
+  background: url(/pro/hongxiu_pc/_prelease/images/book_details/petal_3.png) no-repeat
+}
+.top-bg-op-box .box-center .btn {
+  position: absolute;
+  z-index: 1;
+  top: 96px;
+  left: 820px;
+  width: 222px;
+  height: 76px;
+  animation: pulse 1.5s infinite;
+  background: url(/pro/hongxiu_pc/_prelease/images/book_details/btn.png) no-repeat
+}
+@keyframes petal {
+  0% {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+  100% {
+    transform: translate3d(-800px,250px,0);
+    opacity: .5
+  }
+}
+@-webkit-keyframes petal {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(-800px,250px,0);
+    opacity: .5
+  }
+}
+@keyframes petal2 {
+  0% {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+  100% {
+    transform: translate3d(-800px,520px,0);
+    opacity: .5
+  }
+}
+@-webkit-keyframes petal {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(-800px,520px,0);
+    opacity: .5
+  }
+}
+.book-detail-wrap {
+  position: relative;
+  z-index: 10;
+  min-height: 700px
+}
+.book-information {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-radius: 6px;
+  background: var(--sheet-background-bw-white)
+}
+.book-information .book-update-time {
+  margin-left: 15px
+}
+.book-information .flag {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 65px;
+  height: 65px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -79px -82px;
+  background-size: 335px
+}
+.book-information .book-img {
+  width: 180px;
+  height: 240px;
+  margin: 20px 20px 0;
+  border: none
+}
+.book-information .book-img a,
+.book-information .book-img img {
+  display: block
+}
+.book-information .book-info {
+  position: relative;
+  z-index: 1;
+  min-height: 246px;
+  margin-top: 14px;
+  margin-right: 20px;
+  text-align: justify;
+  flex: 1
+}
+.book-information .book-info .match {
+  position: absolute;
+  top: 16px;
+  right: 16px
+}
+.book-information .book-info .match p a {
+  font: 12px/22px PingFangSC-Regular,'-apple-system',Simsun;
+  display: block;
+  padding: 0 8px;
+  color: #f98f2c;
+  border-radius: 2px;
+  background: #ffe3b8
+}
+.book-information .book-info .match p a:hover {
+  background: #f1cf9d
+}
+.book-information .book-info .unfold {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 73px;
+  width: 50px;
+  height: 22px;
+  cursor: pointer;
+  text-align: right
+}
+.book-information .book-info .unfold .iconfont {
+  font-size: 14px;
+  display: inline-block;
+  margin: 3px 5px 0 0;
+  vertical-align: middle;
+  color: #2972cc
+}
+.book-information .book-info .unfold span {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+.book-information .book-info .unfold b {
+  position: absolute;
+  z-index: 1;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--sheet-background-bw-white)
+}
+.book-information .book-info .unfold.down .down {
+  display: inline-block
+}
+.book-information .book-info .unfold.down .up {
+  display: none
+}
+.book-information .book-info .unfold.up {
+  bottom: 10px
+}
+.book-information .book-info .unfold.up .down {
+  display: none
+}
+.book-information .book-info .unfold.up .up {
+  display: inline-block
+}
+.book-information .book-info .unfold cite {
+  font: 12px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  color: #2972cc
+}
+.book-information .book-info .book-update {
+  font: 14px/38px PingFangSC-Regular,'-apple-system',Simsun;
+  display: flex;
+  overflow: hidden;
+  height: 38px;
+  margin-bottom: 8px;
+  align-items: baseline
+}
+.book-information .book-info .book-update .book-title {
+  font: 700 28px/38px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  margin-right: 6px
+}
+.book-information .book-info .book-update .book-update-time,
+.book-information .book-info .book-update .writer {
+  font: 14px/38px PingFangSC-Regular,'-apple-system',Simsun
+}
+.book-information .book-info .book-update .book-update-time:hover,
+.book-information .book-info .book-update .writer:hover {
+  color: #1a1a1a
+}
+.book-information .book-info p {
+  font: 14px/24px PingFangSC-Regular,'-apple-system',Simsun
+}
+.book-information .book-info p.tag-box {
+  margin-bottom: 1px
+}
+.book-information .book-info p.tag-box .tag {
+  margin: 6px 12px 0 0
+}
+.book-information .book-info p.tag-box .tag a,
+.book-information .book-info p.tag-box .tag i {
+  font: 12px/18px PingFangSC-Regular,'-apple-system',Simsun;
+  display: inline-block;
+  height: 18px;
+  margin-right: 6px;
+  padding: 0 4px;
+  text-align: center;
+  vertical-align: top;
+  color: var(--color-primary);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-primary);
+  border-radius: 2px
+}
+.book-information .book-info p.tag-box .tag i.blue {
+  color: #2972cc;
+  border: 1px solid #4284ed
+}
+.book-information .book-info p.tag-box .tag i.org {
+  color: #ff7e00;
+  border: 1px solid #ff7e00
+}
+.book-information .book-info p.tag-box .tag i.red {
+  color: #fc387e;
+  border: 1px solid #fd9bbe
+}
+.book-information .book-info p.tag-box .tag + .intro {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 11px
+}
+.book-information .book-info p.total {
+  font-size: 0;
+  margin-bottom: 5px
+}
+.book-information .book-info p.total em,
+.book-information .book-info p.total i,
+.book-information .book-info p.total span {
+  display: inline-block;
+  vertical-align: middle
+}
+.book-information .book-info p.total span {
+  font: 18px/20px Arial;
+  margin-top: -2px;
+  margin-right: 5px;
+  color: #1a1a1a
+}
+.book-information .book-info p.total em {
+  font: 12px/20px PingFangSC-Regular,'-apple-system',Simsun
+}
+.book-information .book-info p.total i {
+  font-size: 16px;
+  margin: -3px 10px 0;
+  color: #a6a6a6
+}
+.book-information .book-info p.intro {
+  overflow: hidden;
+  height: 72px;
+  margin-bottom: 34px
+}
+.book-information .book-info p.intro.show {
+  overflow: auto;
+  height: auto;
+  padding-bottom: 30px
+}
+.book-information .book-info .btn {
+  font-size: 0
+}
+.book-information .book-info .btn > a {
+  font: 14px/34px PingFangSC-Regular,'-apple-system',Simsun;
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  height: 34px;
+  margin-right: 20px;
+  padding: 0 16px;
+  text-align: center;
+  vertical-align: middle;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px
+}
+.book-information .book-info .btn > a .download-qrcode {
+  position: absolute;
+  z-index: 1000;
+  top: -10px;
+  left: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  transform: translate(-50%,-100%);
+  text-align: center;
+  border: 1px solid var(--color-primary-ligher);
+  border-radius: 8px;
+  background: #fff
+}
+.book-information .book-info .btn > a .hover2show {
+  display: none
+}
+.book-information .book-info .btn > a:hover .hover2show {
+  display: block
+}
+.book-information .book-info .btn .iconfont {
+  font-size: 14px;
+  width: 14px;
+  margin: -3px 6px 0 0
+}
+.comment-wrap {
+  float: right;
+  overflow: hidden;
+  max-width: 204px;
+  height: 166px;
+  margin-top: 20px;
+  padding-right: 32px;
+  text-align: right
+}
+.comment-wrap .load-score {
+  position: relative;
+  z-index: 1;
+  height: 77px
+}
+.comment-wrap .load-score .la-ball-pulse {
+  position: absolute;
+  top: 30px;
+  right: 10px
+}
+.comment-wrap em {
+  font: 700 32px/1 Arial;
+  vertical-align: -2px
+}
+.comment-wrap .error-score {
+  height: 73px
+}
+.comment-wrap .error-score h3 {
+  font: 16px/84px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif
+}
+.comment-wrap h4 {
+  min-height: 44px
+}
+.comment-wrap h4 span {
+  font: 400 32px/38px FZZCYSK
+}
+.comment-wrap h4 i {
+  font: 400 24px/38px FZZCYSK
+}
+.comment-wrap h4 b {
+  font: 14px/44px PingFangSC-Regular,'-apple-system',Simsun
+}
+.comment-wrap p {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  float: right;
+  width: 110px;
+  min-height: 17px;
+  margin: 4px 0 12px;
+  color: #a6a6a6
+}
+.comment-wrap p span {
+  font: 13px/16px Arial;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle
+}
+.comment-wrap h5 {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  clear: both;
+  margin-bottom: 5px
+}
+.score-mid {
+  font-size: 0;
+  margin-bottom: 56px;
+  cursor: pointer
+}
+.score-mid img {
+  width: 21px;
+  height: 19px;
+  margin-left: 2px
+}
+.take-wrap {
+  font-size: 0;
+  position: absolute;
+  z-index: 1;
+  right: 40px;
+  bottom: 26px;
+  height: 20px
+}
+.take-wrap a {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun
+}
+.take-wrap a.download {
+  position: relative;
+  z-index: 1
+}
+.take-wrap i {
+  font-size: 12px;
+  height: 20px;
+  margin: 0 20px;
+  border-right: 1px solid #e6e6e6
+}
+.take-wrap .iconfont {
+  font-size: 14px;
+  display: inline-block;
+  min-width: 14px;
+  margin-right: 3px
+}
+.take-wrap .qr-btn {
+  position: relative;
+  z-index: 1
+}
+.take-wrap .qr-btn:hover .drop-down {
+  display: block
+}
+.take-wrap .qr-btn .drop-down {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: -40px;
+  display: none;
+  width: 188px;
+  height: 168px;
+  padding: 20px;
+  animation: .15s ease-out;
+  animation-name: fadeinT;
+  border: 1px solid #e5e5e5;
+  background: var(--sheet-background-bw-white);
+  box-shadow: 0 0 15px rgba(0,0,0,.1)
+}
+.take-wrap .qr-btn .drop-down h3 {
+  text-align: center;
+  color: #1a1a1a
+}
+.take-wrap .qr-btn .drop-down img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 10px
+}
+.take-wrap .qr-btn .drop-down cite {
+  position: absolute;
+  bottom: 100%;
+  left: 68%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  border-top: 0 none;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #e5e5e5;
+  border-left: 8px solid transparent
+}
+.take-wrap .qr-btn .drop-down cite i {
+  position: absolute;
+  top: 1px;
+  right: -28px;
+  width: 0;
+  height: 0;
+  border-top: 0 none;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--sheet-background-bw-white);
+  border-left: 8px solid transparent
+}
+.content-nav-wrap {
+  height: 48px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6
+}
+.content-nav-wrap .nav-wrap li {
+  font: 18px/48px FZZCYSK;
+  float: left;
+  overflow: hidden;
+  height: 47px;
+  text-align: center
+}
+.content-nav-wrap .nav-wrap li.act {
+  margin-bottom: -1px;
+  border-bottom: 2px solid var(--color-primary)
+}
+.content-nav-wrap .nav-wrap li.act a {
+  color: var(--color-primary)
+}
+.content-nav-wrap .nav-wrap li a {
+  display: block;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #1a1a1a
+}
+.content-nav-wrap .nav-wrap li a i {
+  font: 14px/48px FZZCYSK
+}
+.content-nav-wrap .nav-wrap li a:hover {
+  color: var(--color-primary)
+}
+.content-nav-wrap .update {
+  font: 14px/48px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  padding-left: 30px;
+  color: #2972cc
+}
+.content-nav-wrap .update i {
+  font-family: Arial;
+  margin: 0 8px 0 2px
+}
+.left-wrap {
+  width: 750px
+}
+.left-wrap .left-block-bg {
+  border-radius: 6px;
+  background: var(--sheet-background-bw-white)
+}
+.left-wrap .book-chapter {
+  padding: 20px
+}
+.left-wrap .book-chapter .book-chapter-a {
+  font-size: 14px;
+  display: flex;
+  height: 44px;
+  color: #2972cc;
+  justify-content: flex-start;
+  align-items: center
+}
+.left-wrap .book-chapter .book-chapter-a .updateTime {
+  display: inline-block;
+  margin-left: auto;
+  color: #999
+}
+.left-wrap .banner-wrap {
+  width: 750px
+}
+.left-wrap .banner-wrap a,
+.left-wrap .banner-wrap img {
+  width: 100%;
+  height: 64px
+}
+.left-wrap .left-wrap-title {
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e6
+}
+.left-wrap h3 {
+  font-size: 22px;
+  line-height: 32px;
+  overflow: hidden;
+  height: 32px
+}
+.gift-zone {
+  height: 167px;
+  border-bottom: 1px solid #e6e6e6
+}
+.gift-zone h4 {
+  font-weight: 400;
+  overflow: hidden;
+  margin-bottom: 20px
+}
+.gift-zone h4 b {
+  font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  font-size: 18px;
+  margin-right: 4px;
+  color: var(--color-primary)
+}
+.gift-zone h4 span {
+  font-family: PingFangSC-Regular,'-apple-system',Simsun;
+  font-size: 14px;
+  margin: 8px 4px 0 0;
+  color: #a6a6a6
+}
+.gift-zone h4 cite {
+  font-family: PingFangSC-Regular,'-apple-system',Simsun;
+  float: right;
+  margin-top: 6px;
+  color: #a6a6a6
+}
+.gift-zone h4 a,
+.gift-zone h4 b,
+.gift-zone h4 span {
+  float: left
+}
+.gift-zone h4 .help {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  margin-top: 8px;
+  transition: color .5s;
+  color: #e6e6e6
+}
+.gift-zone h4 .help:hover {
+  color: var(--color-primary)
+}
+.gift-zone .gift-list ul {
+  width: 730px
+}
+.gift-zone .gift-list li {
+  float: left;
+  width: 114px;
+  margin-left: 7px;
+  padding-bottom: 14px;
+  cursor: pointer;
+  transition: background .5s;
+  text-align: center;
+  border-radius: 3px
+}
+.gift-zone .gift-list li:first-child {
+  margin-left: 0
+}
+.gift-zone .gift-list li .icon-gift1 {
+  margin-right: -15px!important
+}
+.gift-zone .gift-list li .icon-gift3 {
+  margin-top: 5px!important
+}
+.gift-zone .gift-list li:hover {
+  background: var(--color-primary-lighest)
+}
+.gift-zone .gift-list li:hover .gift img {
+  margin-top: -2px;
+  margin-bottom: 2px
+}
+.gift-zone .gift-list li .gift {
+  height: 70px;
+  padding-top: 6px
+}
+.gift-zone .gift-list li .gift img {
+  display: block;
+  width: 110px;
+  height: 60px;
+  transition: margin .3s
+}
+.gift-zone .gift-list li h5 {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  margin-bottom: 10px;
+  color: #ddce8e
+}
+.gift-zone .gift-list li p {
+  font: 12px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  color: #444
+}
+.fans-zone h3 {
+  margin-bottom: 16px
+}
+.fans-zone dd {
+  float: left;
+  width: 249px;
+  height: 251px;
+  padding: 24px 0 0
+}
+.fans-zone dd.line {
+  width: 0;
+  height: 202px;
+  margin-top: 26px;
+  border-left: 1px solid #e5e5e5;
+  border-left: 1px solid rgba(0,0,0,.1)
+}
+.fans-interact {
+  text-align: center
+}
+.fans-interact dd:hover .icon-box span {
+  top: 0
+}
+.fans-interact dd:hover .icon-box.money span {
+  top: 6px
+}
+.fans-interact dd h4 {
+  margin-bottom: 24px;
+  padding-left: 20px;
+  text-align: left
+}
+.fans-interact dd h4 em,
+.fans-interact dd h4 span {
+  display: inline-block;
+  vertical-align: middle
+}
+.fans-interact dd h4 span {
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  z-index: 1;
+  margin-right: 4px;
+  color: var(--color-primary)
+}
+.fans-interact dd h4 em {
+  font: 14px/22px PingFangSC-Regular,'-apple-system',Simsun;
+  margin-top: 5px;
+  color: #a6a6a6
+}
+.fans-interact dd h4 b {
+  font-size: 12px;
+  font-weight: 400;
+  min-width: 12px;
+  margin-left: -3px;
+  vertical-align: 2px;
+  color: #bfbfbf
+}
+.fans-interact dd .action-wrap p {
+  overflow: hidden
+}
+.fans-interact dd .action-wrap p.num {
+  font: 30px/33px Arial;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  height: 33px;
+  margin-bottom: 6px;
+  color: #1a1a1a
+}
+.fans-interact dd .action-wrap p.num span {
+  font: 16px/1 Arial;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 160px;
+  animation: fadeOutUp 1s 1s;
+  color: #bf2c24
+}
+.fans-interact dd .action-wrap p + p {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  height: 16px;
+  margin-bottom: 10px
+}
+.fans-interact dd .action-wrap p + p i {
+  font-family: Arial;
+  margin: 0 3px
+}
+.fans-interact dd .action-wrap p + p em {
+  font: 14px/16px Arial;
+  display: inline-block;
+  height: 16px;
+  margin: -2px 3px 0;
+  vertical-align: middle;
+  color: var(--color-primary)
+}
+.fans-interact dd .icon-box {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 44px;
+  height: 52px;
+  margin: 0 auto
+}
+.fans-interact dd .icon-box b {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 44px;
+  height: 2px;
+  margin: 0 auto
+}
+.fans-interact dd .icon-box span {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 50%;
+  margin-left: -18px;
+  transition: top .5s ease-out
+}
+.fans-interact dd .icon-box.month span {
+  width: 36px;
+  height: 52px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -299px 0;
+  background-size: 335px
+}
+.fans-interact dd .icon-box.month b {
+  background: #ffabab
+}
+.fans-interact dd .icon-box.rec span {
+  width: 36px;
+  height: 52px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -299px -54px;
+  background-size: 335px
+}
+.fans-interact dd .icon-box.rec b {
+  background: #d69a72
+}
+.fans-interact dd .icon-box.money span {
+  top: 18px;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -100px -222px;
+  background-size: 335px
+}
+.fans-interact dd .icon-box.money b {
+  background: #efdfb0
+}
+.fans-interact dd.dynamic-state h5 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  padding-left: 20px;
+  text-align: left;
+  color: var(--color-primary)
+}
+.fans-interact dd.dynamic-state .no-data-box span {
+  display: block;
+  width: 104px;
+  height: 62px;
+  margin: 10px auto 20px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -87px 0;
+  background-size: 335px
+}
+.fans-interact dd.dynamic-state .no-data-box p {
+  font: 14px/19px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #a6a6a6
+}
+.fans-interact dd.dynamic-state .no-data-box p i {
+  font-family: Arail
+}
+.fans-interact dd.dynamic-state .fans-info {
+  margin-bottom: 26px;
+  padding: 0 10px 0 20px
+}
+.fans-interact dd.dynamic-state .fans-info:after,
+.fans-interact dd.dynamic-state .fans-info:before {
+  display: table;
+  content: ''
+}
+.fans-interact dd.dynamic-state .fans-info:after {
+  clear: both
+}
+.fans-interact dd.dynamic-state .fans-info .avatar {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 44px;
+  height: 44px;
+  margin-right: 14px
+}
+.fans-interact dd.dynamic-state .fans-info .avatar a,
+.fans-interact dd.dynamic-state .fans-info .avatar img,
+.fans-interact dd.dynamic-state .fans-info .avatar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%
+}
+.fans-interact dd.dynamic-state .fans-info .avatar span {
+  background-image: url(/pro/hongxiu_pc/_prelease/images/ico/big_user.a9911.png)
+}
+.fans-interact dd.dynamic-state .fans-info .avatar cite {
+  position: absolute;
+  z-index: 1;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -19px
+}
+.fans-interact dd.dynamic-state .fans-info .info {
+  float: left;
+  width: 130px;
+  margin-top: 1px;
+  text-align: left
+}
+.fans-interact dd.dynamic-state .fans-info .info p {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun
+}
+.fans-interact dd.dynamic-state .fans-info .info span {
+  font: 12px/18px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #a6a6a6
+}
+.fans-interact dd.dynamic-state .fans-info .info span a {
+  color: #a6a6a6
+}
+.fans-interact dd.dynamic-state .fans-info .info span a:hover {
+  color: var(--color-primary)
+}
+.fans-interact dd.dynamic-state h6 {
+  font: 700 14px/1 PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: left
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap {
+  overflow: hidden;
+  height: 94px
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap ul {
+  width: 208px;
+  margin: 0 auto
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li {
+  font: 12px/30px PingFangSC-Regular,'-apple-system',Simsun;
+  height: 29px;
+  text-align: left;
+  border-top: 1px solid #e6e6e6
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li:after,
+.fans-interact dd.dynamic-state .fans-slide-wrap li:before {
+  display: table;
+  content: ''
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li:after {
+  clear: both
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li:first-child {
+  border-top: none
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li span {
+  margin: 0 5px;
+  color: #999
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li i {
+  font-family: Arial;
+  margin-right: 5px
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li b {
+  float: left
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li cite {
+  float: right
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li strong {
+  font-weight: 400;
+  margin: 0 3px
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li b {
+  font-weight: 400;
+  overflow: hidden;
+  max-width: 72px;
+  height: 30px;
+  margin-right: 5px;
+  white-space: nowrap;
+  text-overflow: clip
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li em {
+  color: #bb9494
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li.high-light {
+  color: var(--color-primary)
+}
+.fans-interact dd.dynamic-state .fans-slide-wrap li.high-light a,
+.fans-interact dd.dynamic-state .fans-slide-wrap li.high-light em,
+.fans-interact dd.dynamic-state .fans-slide-wrap li.high-light span {
+  color: var(--color-primary)
+}
+.send-comment-wrap {
+  overflow: hidden;
+  height: 78px;
+  margin-bottom: 10px
+}
+.send-comment-wrap .avatar {
+  width: 44px;
+  height: 44px;
+  margin: 20px 15px 20px 20px;
+  border-radius: 100%
+}
+.send-comment-wrap .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%
+}
+.send-comment-wrap .send-comment-input {
+  margin-top: 20px
+}
+.send-comment-wrap .send-comment-input h4 {
+  width: 648px;
+  height: 34px;
+  margin: 6px 0 16px;
+  border: 1px solid #e6e6e6
+}
+.send-comment-wrap .send-comment-input h4 input {
+  font: 14px/24px PingFangSC-Regular,'-apple-system',Simsun;
+  width: 560px;
+  padding: 5px 10px
+}
+.send-comment-wrap .send-comment-input h4 .count {
+  font: 12px/34px PingFangSC-Regular,'-apple-system',Simsun;
+  float: right;
+  height: 34px;
+  margin-right: 10px;
+  color: #a6a6a6
+}
+.send-comment-wrap .send-content {
+  position: relative;
+  z-index: 1;
+  width: 648px;
+  height: 70px;
+  border: 1px solid #e6e6e6
+}
+.send-comment-wrap .send-content textarea {
+  font-family: PingFangSC-Regular,'-apple-system',Simsun;
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  width: 625px;
+  height: 60px;
+  padding: 4px 10px;
+  border: none
+}
+.send-comment-wrap .send-content .count {
+  font: 12px/34px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  z-index: 1;
+  bottom: -50px;
+  left: 0;
+  color: #a6a6a6
+}
+.send-comment-wrap .btn {
+  font-size: 0;
+  float: right;
+  margin-top: 16px
+}
+.send-comment-wrap .btn a {
+  font: 14px/32px PingFangSC-Regular,'-apple-system',Simsun;
+  display: inline-block;
+  width: 76px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 2px
+}
+.comment-head {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 31px;
+  padding: 0 20px 20px
+}
+.comment-head h3 {
+  float: left;
+  margin-bottom: 10px
+}
+.comment-head h3 span {
+  transition: color .3s
+}
+.comment-head h3 span.act {
+  color: #262626
+}
+.comment-head h3 span.act:hover {
+  color: #262626
+}
+.comment-head .blue {
+  font: 14px/36px PingFangSC-Regular,'-apple-system',Simsun;
+  float: right
+}
+.comment-head .list-tab {
+  height: 35px;
+  border-bottom: 1px solid #e6e6e6
+}
+.comment-head .list-tab a {
+  font: 14px/36px PingFangSC-Regular,'-apple-system',Simsun;
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  transition: border 0s;
+  text-align: center;
+  vertical-align: middle
+}
+.comment-head .list-tab a.act {
+  height: 34px;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary)
+}
+.user-comment-wrap {
+  padding: 0 20px 20px
+}
+.user-comment-wrap .la-ball-pulse {
+  margin: 100px auto
+}
+.user-comment-wrap .comment-list .no-data {
+  padding-bottom: 60px;
+  text-align: center
+}
+.user-comment-wrap .comment-list .no-data span {
+  display: block;
+  width: 77px;
+  height: 72px;
+  margin: 80px auto 20px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: 0 -82px;
+  background-size: 335px
+}
+.user-comment-wrap .comment-list .no-data p {
+  font: 14px/21px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #a6a6a6
+}
+.user-comment-wrap .comment-list .no-data p i {
+  font-family: Arail
+}
+.user-comment-wrap .comment-list dd {
+  overflow: hidden;
+  padding: 18px 0;
+  border-bottom: 1px solid #e6e6e6
+}
+.user-comment-wrap .comment-list dd .user-photo {
+  float: left;
+  margin: 0 12px 0 0
+}
+.user-comment-wrap .comment-list dd .user-photo a {
+  cursor: default
+}
+.user-comment-wrap .comment-list dd .comment-info {
+  float: left;
+  width: 650px;
+  margin-top: 14px
+}
+.user-comment-wrap .comment-list dd .comment-info h4 {
+  font: 12px/14px PingFangSC-Regular,'-apple-system',Simsun;
+  overflow: hidden;
+  max-height: 16px;
+  margin-bottom: 12px;
+  color: #999
+}
+.user-comment-wrap .comment-list dd .comment-info h4 .user-name {
+  margin: 0 5px
+}
+.user-comment-wrap .comment-list dd .comment-info h4 .user-name.default {
+  color: #1a1a1a
+}
+.user-comment-wrap .comment-list dd .comment-info h4 i {
+  font-family: Arial;
+  margin: 0 8px 0 2px
+}
+.user-comment-wrap .comment-list dd .comment-info h5 {
+  overflow: hidden
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a {
+  font-size: 0;
+  display: block;
+  color: #2972cc
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a.yellow {
+  color: #ed9b42
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a i {
+  font: 16px/22px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  display: block
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a .tag,
+.user-comment-wrap .comment-list dd .comment-info h5 a i {
+  display: inline-block;
+  vertical-align: middle
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a .tag {
+  font: 12px/22px PingFangSC-Regular,'-apple-system',Simsun;
+  width: 40px;
+  height: 22px;
+  margin-right: 6px;
+  text-align: center;
+  color: var(--sheet-background-bw-white);
+  border-radius: 2px
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a .tag.top {
+  background: #4284ed
+}
+.user-comment-wrap .comment-list dd .comment-info h5 a .tag.best {
+  background: #ff3955
+}
+.user-comment-wrap .comment-list dd .comment-info p {
+  font: 14px/24px PingFangSC-Regular,'-apple-system',Simsun;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  max-height: 72px;
+  margin-top: 8px
+}
+.user-comment-wrap .comment-list dd .reply-wrap {
+  padding: 18px 0 0
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form {
+  display: none
+}
+.user-comment-wrap .comment-list dd .reply-wrap .icon-reply {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: grey
+}
+.user-comment-wrap .comment-list dd .reply-wrap .icon-reply .iconfont {
+  font-size: 16px;
+  display: inline-block;
+  margin: -1px 6px 0 0;
+  vertical-align: middle
+}
+.user-comment-wrap .comment-list dd .reply-wrap .icon-reply:hover {
+  color: var(--color-primary)
+}
+.user-comment-wrap .comment-list dd .reply-wrap .icon-reply:hover .iconfont {
+  color: var(--color-primary)
+}
+.user-comment-wrap .comment-list dd .reply-wrap .icon-reply span {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun
+}
+.user-comment-wrap .comment-list dd .reply-wrap .icon-reply span b {
+  font-weight: 400
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form {
+  position: relative;
+  z-index: 1;
+  width: 650px;
+  height: 80px;
+  background: #f5f5f5
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form cite {
+  position: absolute;
+  top: -7px;
+  left: 36px;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  border-top: 0 none;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #f5f5f5;
+  border-left: 7px solid transparent
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form p {
+  overflow: hidden;
+  padding: 20px
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form p i {
+  float: left;
+  width: 529px;
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  background: var(--sheet-background-bw-white)
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form p input {
+  font: 14px/22px PingFangSC-Regular,'-apple-system',Simsun;
+  display: block;
+  width: 454px;
+  height: 22px;
+  padding: 8px 10px
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form p .red-btn {
+  font: 14px/40px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  width: 80px;
+  height: 40px;
+  border-radius: 0 2px 2px 0!important
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form p .red-btn.isNeedToLogin {
+  color: #666;
+  background: #ccc
+}
+.user-comment-wrap .comment-list dd .reply-wrap .reply-form p .count {
+  font: 12px/40px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 110px;
+  color: #999
+}
+.page-box {
+  padding: 30px 0 5px
+}
+.right-wrap {
+  overflow: hidden;
+  width: 250px;
+  border-radius: 6px;
+  background: var(--sheet-background-bw-white)
+}
+.right-wrap .head-bg {
+  height: 74px;
+  background: url(/pro/hongxiu_pc/_prelease/images/book_details/head_bg.483cf.png)
+}
+.author-state {
+  border-bottom: 1px solid #e6e6e6
+}
+.author-state .info-wrap {
+  padding: 24px 0 18px;
+  text-align: center
+}
+.author-state .info-wrap .img-box {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 16px;
+  border-radius: 100%
+}
+.author-state .info-wrap .img-box .level-tag {
+  position: absolute;
+  z-index: 1;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -18px
+}
+.author-state .info-wrap .img-box img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%
+}
+.author-state .info-wrap h3 {
+  font: 700 16px/18px PingFangSC-Regular,'-apple-system',Simsun;
+  overflow: hidden;
+  height: 18px
+}
+.author-state .info-wrap .level-tag {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  width: 40px;
+  height: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px
+}
+.author-state .info-wrap .level-tag.lv {
+  font: italic 12px/16px Arial;
+  background: #fc6c28
+}
+.author-state .info-wrap .level-tag.blue {
+  background: #0096e9
+}
+.author-state .info-wrap .level-tag.red {
+  background: #bf2c24
+}
+.author-state .info-wrap .level-tag.platina {
+  width: 40px;
+  height: 16px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -249px -200px;
+  background-size: 335px
+}
+.author-state .info-wrap .total-wrap {
+  padding: 24px 24px 18px
+}
+.author-state .info-wrap .total-wrap li {
+  float: left;
+  width: 48px;
+  margin-left: 29px
+}
+.author-state .info-wrap .total-wrap li:first-child {
+  margin-left: 0
+}
+.author-state .info-wrap .total-wrap li .iconfont {
+  font-size: 22px;
+  display: block;
+  min-width: 22px;
+  min-height: 30px;
+  color: var(--color-primary)
+}
+.author-state .info-wrap .total-wrap li h4 {
+  font: 12px/18px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #666
+}
+.author-state .info-wrap .total-wrap li p {
+  font: 14px/18px Arial;
+  white-space: nowrap;
+  color: var(--color-primary)
+}
+.author-state .info-wrap .other-works {
+  width: 226px;
+  margin: 0 auto;
+  padding: 24px 0 4px;
+  border-top: 1px solid #e6e6e6
+}
+.author-state .info-wrap .other-works h3 {
+  font: 700 16px/16px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  margin-bottom: 24px;
+  text-align: left
+}
+.author-state .info-wrap .other-works .work-slides {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 226px;
+  height: 293px;
+  margin: 0 auto;
+  padding-top: 4px
+}
+.author-state .info-wrap .other-works .work-slides li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 226px;
+  transition-timing-function: ease-in-out!important;
+  transition-duration: .5s!important
+}
+.author-state .info-wrap .other-works .work-slides li#item1 {
+  display: block
+}
+.author-state .info-wrap .other-works .work-slides li .book-img {
+  width: 84px;
+  height: 112px;
+  margin: 0 auto 14px
+}
+.author-state .info-wrap .other-works .work-slides li .book-img em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -146px -82px;
+  background-size: 335px
+}
+.author-state .info-wrap .other-works .work-slides li .text h4 {
+  font: 18px/24px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  overflow: hidden;
+  height: 24px;
+  margin-bottom: 9px
+}
+.author-state .info-wrap .other-works .work-slides li .text p.red {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  overflow: hidden;
+  height: 16px;
+  margin-bottom: 10px
+}
+.author-state .info-wrap .other-works .work-slides li .text p.red a {
+  color: var(--color-primary)
+}
+.author-state .info-wrap .other-works .work-slides li .text p.red i {
+  font-family: Airal;
+  margin: 0 3px
+}
+.author-state .info-wrap .other-works .work-slides li .text p.red + p {
+  font: 12px/20px PingFangSC-Regular,'-apple-system',Simsun;
+  overflow: hidden;
+  height: 60px;
+  margin-bottom: 16px;
+  text-align: left;
+  color: grey
+}
+.author-state .info-wrap .other-works .work-slides li .text .add-book {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  display: block;
+  width: 98px;
+  margin: 0 auto;
+  padding: 7px 0;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px
+}
+.author-state .info-wrap .other-works .work-slides li .text .in-shelf {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  display: block;
+  width: 98px;
+  margin: 0 auto;
+  padding: 7px 0;
+  border-radius: 20px
+}
+.author-state .info-wrap .other-works .work-slides .nav {
+  display: none
+}
+.author-state .info-wrap .other-works .work-slides .arrows a {
+  font-size: 26px;
+  position: absolute;
+  top: 50px;
+  color: #e6e6e6
+}
+.author-state .info-wrap .other-works .work-slides .arrows a:hover {
+  color: #ccc
+}
+.author-state .info-wrap .other-works .work-slides .arrows a.prev {
+  left: -5px
+}
+.author-state .info-wrap .other-works .work-slides .arrows a.next {
+  right: -5px
+}
+.crazy-fans-wrap {
+  width: 210px
+}
+.crazy-fans-wrap.week li {
+  border-top: none!important;
+  border-bottom: 1px solid #e6e6e6
+}
+.crazy-fans-wrap.inner-wrap {
+  padding-bottom: 0
+}
+.crazy-fans-wrap h3 {
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  z-index: 1
+}
+.crazy-fans-wrap h3 a {
+  font-size: 12px;
+  font-weight: 400;
+  float: right;
+  margin-top: 1px;
+  color: #888
+}
+.crazy-fans-wrap h3 a .iconfont {
+  font-size: 12px
+}
+.crazy-fans-wrap h3 a:hover {
+  color: var(--color-primary)
+}
+.crazy-fans-wrap .fans-list ul {
+  padding-top: 10px
+}
+.crazy-fans-wrap .fans-list li {
+  overflow: hidden;
+  height: 39px;
+  border-top: 1px solid #e6e6e6
+}
+.crazy-fans-wrap .fans-list li:first-child {
+  border-top: none
+}
+.crazy-fans-wrap .fans-list li.top {
+  height: auto!important;
+  padding: 15px 0 18px
+}
+.crazy-fans-wrap .fans-list li.top span {
+  margin-top: 1px
+}
+.crazy-fans-wrap .fans-list li.top .info {
+  float: left;
+  width: 130px;
+  margin-top: 2px
+}
+.crazy-fans-wrap .fans-list li.top .info h4 {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  float: none;
+  overflow: hidden;
+  max-width: 120px;
+  height: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.crazy-fans-wrap .fans-list li.top .info p {
+  font-size: 12px;
+  color: grey
+}
+.crazy-fans-wrap .fans-list li.top .info p .iconfont {
+  font-size: 14px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: -3px 4px 0 0;
+  vertical-align: middle;
+  color: var(--color-primary)
+}
+.crazy-fans-wrap .fans-list li.top .avatar {
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 44px;
+  height: 44px;
+  margin-top: -4px;
+  border-radius: 100%
+}
+.crazy-fans-wrap .fans-list li.top .avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%
+}
+.crazy-fans-wrap .fans-list li.top .avatar .fans-level {
+  position: absolute;
+  z-index: 1;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -19px
+}
+.crazy-fans-wrap .fans-list li.top .avatar .default-avatar {
+  width: 100%;
+  height: 100%;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/ico/default_avatar.13ca0.png)
+}
+.crazy-fans-wrap .fans-list li h4 {
+  font: 14px/39px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  overflow: hidden;
+  max-width: 120px;
+  height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.crazy-fans-wrap .fans-list li span {
+  font: 14px/16px Arial;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-top: 12px;
+  margin-right: 12px;
+  text-align: center;
+  border-radius: 2px
+}
+.crazy-fans-wrap .fans-list li span.no1,
+.crazy-fans-wrap .fans-list li span.no2,
+.crazy-fans-wrap .fans-list li span.no3 {
+  color: var(--sheet-background-bw-white)
+}
+.crazy-fans-wrap .fans-list li span.no1 {
+  background: var(--color-rank-label-bg-1)
+}
+.crazy-fans-wrap .fans-list li span.no2 {
+  background: var(--color-rank-label-bg-2)
+}
+.crazy-fans-wrap .fans-list li span.no3 {
+  background: var(--color-rank-label-bg-3)
+}
+.crazy-fans-wrap .fans-list li .value {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 39px;
+  float: right;
+  color: grey
+}
+.type-rec-wrap {
+  width: 210px
+}
+.type-rec-wrap.inner-wrap {
+  padding-bottom: 0
+}
+.type-rec-wrap h3 {
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  z-index: 1
+}
+.type-rec-wrap li {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 15px 0;
+  border-top: 1px solid #e6e6e6
+}
+.type-rec-wrap li:first-child {
+  border-top: none
+}
+.type-rec-wrap li .img-box {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 64px;
+  height: 86px;
+  margin-right: 10px;
+  border: 1px solid #e6e6e6
+}
+.type-rec-wrap li .img-box a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%
+}
+.type-rec-wrap li .img-box a img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -moz-transition: -moz-transform .3s ease-out;
+  -ms-transition: -ms-transform .3s ease-out;
+  transition: transform .3s ease-out
+}
+.type-rec-wrap li .img-box a img:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05)
+}
+.type-rec-wrap li .img-box span {
+  font: 14px/14px Arial;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  height: 14px;
+  padding: 0 3px 0 2px;
+  color: #fff;
+  border-radius: 0 5px 0 0;
+  background: var(--color-primary)
+}
+.type-rec-wrap li .book-info {
+  float: left;
+  width: 134px
+}
+.type-rec-wrap li .book-info h4 {
+  font: 700 14px/20px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 6px
+}
+.type-rec-wrap li .book-info .author {
+  height: 16px;
+  margin-bottom: 6px
+}
+.type-rec-wrap li .book-info .author img {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin: 2px 5px 0 0
+}
+.type-rec-wrap li .book-info .author a {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  color: #a6a6a6
+}
+.type-rec-wrap li .book-info .intro {
+  font: 12px/20px PingFangSC-Regular,'-apple-system',Simsun;
+  overflow: hidden;
+  height: 40px;
+  color: #666
+}
+.type-rec-wrap li .book-info .intro.red {
+  color: #bf2c24
+}
+.reading-track {
+  height: 40px;
+  text-align: center
+}
+.reading-track a {
+  line-height: 36px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #6b3612;
+  border: 1px solid #ffdc95;
+  background: #fff7e7
+}
+.reading-track span {
+  font: 16px/19px FZZCYSK;
+  margin-right: 10px;
+  color: #e67e21
+}
+.reading-track i {
+  font: 14px/38px PingFangSC-Regular,'-apple-system',Simsun
+}
+.reading-track .iconfont {
+  font-size: 14px;
+  min-width: 14px;
+  vertical-align: -1px;
+  color: #a68671
+}
+.volume {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 40px
+}
+.volume:first-child {
+  margin-top: 0
+}
+.volume ul {
+  overflow: hidden;
+  width: 1050px
+}
+.volume h3 {
+  font: 700 18px/24px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  overflow: hidden;
+  height: 24px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e6e6e6
+}
+.volume h3 span {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  display: inline-block;
+  min-width: 24px;
+  margin: -1px 8px 0;
+  padding: 0 3px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff
+}
+.volume h3 span.free {
+  background: #8ccd0a
+}
+.volume h3 span.vip {
+  background: #fc6c28
+}
+.volume h3 i {
+  font-family: Arail
+}
+.volume h3 .count {
+  font: 14px/19px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #666
+}
+.volume h3 .count cite {
+  font-family: Arial;
+  margin: 0 3px
+}
+.volume h3 .subscri,
+.volume h3 .subscribe {
+  position: relative;
+  z-index: 2;
+  float: right
+}
+.volume h3 .subscri .btn,
+.volume h3 .subscribe .btn {
+  font: 14px/28px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  display: block;
+  width: 96px;
+  height: 28px;
+  transition: background-color .5s;
+  text-align: center;
+  color: #fff;
+  background: #bf2c24
+}
+.volume h3 .subscri .btn b,
+.volume h3 .subscribe .btn b {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 3px;
+  vertical-align: 0
+}
+.volume h3 .subscri strong,
+.volume h3 .subscribe strong {
+  font: 14px/24px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  right: 88px;
+  transition: right ease-out .5s;
+  text-align: center;
+  color: #bf2c24
+}
+.volume h3 .subscri:hover strong,
+.volume h3 .subscribe:hover strong {
+  right: 94px
+}
+.volume h3 .subscri:hover em,
+.volume h3 .subscribe:hover em {
+  background: var(--color-primary)
+}
+.volume li {
+  font: 14px/40px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  overflow: hidden;
+  width: 286px;
+  height: 40px;
+  padding-right: 60px;
+  border-top: 1px solid #ebebeb
+}
+.volume li:first-child {
+  border-top: none
+}
+.volume li a {
+  float: left;
+  overflow: hidden;
+  max-width: 240px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.volume li .iconfont {
+  font-size: 16px;
+  float: right;
+  color: #bfbfbf
+}
+.catalog-content-wrap {
+  border-radius: 6px
+}
+.catalog-content-wrap.catalog-page {
+  padding: 20px;
+  background: var(--sheet-background-bw-white)
+}
+.catalog-content-wrap.subscribe-content {
+  padding: 16px 0 100px
+}
+.catalog-content-wrap .loading {
+  padding-top: 135px;
+  text-align: center
+}
+.catalog-content-wrap .loading .la-ball-pulse {
+  margin: 0 auto
+}
+.catalog-content-wrap .no-data .null {
+  width: 142px;
+  height: 100px;
+  margin: 0 auto 20px;
+  background: url(/pro/hongxiu_pc/_prelease/images/common/big_wu.ba1a4.png)
+}
+.catalog-content-wrap .no-data p {
+  font: 14px/32px PingFangSC-Regular,'-apple-system',Simsun;
+  text-align: center;
+  color: #666
+}
+.chapter-select-wrap {
+  padding-left: 20px
+}
+.auto-switch-wrap {
+  position: relative;
+  z-index: 1
+}
+.auto-switch {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0
+}
+.auto-switch a,
+.auto-switch em,
+.auto-switch span {
+  display: inline-block;
+  vertical-align: middle
+}
+.auto-switch span {
+  font: 14px/19px PingFangSC-Regular,'-apple-system',Simsun
+}
+.auto-switch em {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 12px;
+  margin-right: 12px;
+  border-radius: 14px;
+  background: #bfbfbf
+}
+.auto-switch em a {
+  font-size: 12px;
+  line-height: 24px;
+  position: absolute;
+  z-index: 1;
+  top: -6px;
+  width: 44px;
+  height: 24px;
+  transition: left .3s;
+  text-align: center;
+  color: #fff;
+  border-radius: 100px
+}
+.auto-switch em.off a {
+  left: 0;
+  background: grey
+}
+.auto-switch em.on {
+  background: #ffaca8
+}
+.auto-switch em.on a {
+  left: 20px;
+  background: #bf2c24
+}
+.price-wrap {
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 160px;
+  margin-top: 72px;
+  padding: 0 32px 0 0;
+  text-align: left
+}
+.price-wrap .price {
+  position: absolute;
+  z-index: 1;
+  top: -36px;
+  right: 44px
+}
+.price-wrap .price h6 {
+  margin-bottom: 2px
+}
+.price-wrap .price h6 em {
+  font: 30px/1 FZZCYSK;
+  display: inline-block;
+  margin-right: 2px;
+  color: #bf2c24
+}
+.price-wrap .price h6 cite {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  display: inline-block;
+  vertical-align: top;
+  color: #bf2c24
+}
+.price-wrap .price b {
+  display: block;
+  margin-bottom: 2px;
+  transform: rotate(-20deg);
+  border-bottom: 1px solid #ccc
+}
+.price-wrap .price span {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  display: block;
+  text-align: right;
+  color: #a6a6a6
+}
+.price-wrap .user-state p {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  white-space: nowrap
+}
+.price-wrap .user-state p i {
+  font-family: Arial;
+  margin: 0 3px
+}
+.price-wrap .user-state p:first-child {
+  height: 17px;
+  margin-bottom: 11px;
+  padding-bottom: 12px;
+  color: #a6a6a6;
+  border-bottom: 1px solid #e6e6e6
+}
+label:hover b {
+  color: var(--color-primary)
+}
+.select-all label {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  display: inline-block
+}
+.book-detail-wrap {
+  padding-bottom: 50px
+}
+.chapter-wrap {
+  border-radius: 6px
+}
+.chapter-wrap .chapter {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 0
+}
+.chapter-wrap .chapter h3.disabled label {
+  cursor: default;
+  color: #a6a6a6
+}
+.chapter-wrap .chapter h3.disabled label:hover b {
+  color: #a6a6a6
+}
+.chapter-list-wrap {
+  position: relative;
+  z-index: 1
+}
+.chapter-list-wrap h3 {
+  font-size: 0;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  white-space: nowrap
+}
+.chapter-list-wrap h3 cite,
+.chapter-list-wrap h3 em,
+.chapter-list-wrap h3 label,
+.chapter-list-wrap h3 span {
+  display: inline-block;
+  vertical-align: middle
+}
+.chapter-list-wrap h3 span {
+  width: 588px;
+  margin-right: 10px;
+  margin-left: 25px
+}
+.chapter-list-wrap h3 span.ml0 {
+  width: 280px;
+  margin-left: 0
+}
+.chapter-list-wrap h3 cite,
+.chapter-list-wrap h3 em,
+.chapter-list-wrap h3 label,
+.chapter-list-wrap h3 span {
+  font: 700 12px/1 PingFangSC-Regular,'-apple-system',Simsun
+}
+.chapter-list-wrap h3 em {
+  width: 78px;
+  text-align: left
+}
+.chapter-list-wrap h3 cite {
+  width: 128px;
+  text-align: center
+}
+.chapter-list-wrap h3 cite.mr0 {
+  width: 74px
+}
+.chapter-list-wrap h3 label {
+  width: 150px;
+  margin-right: 30px;
+  text-align: center
+}
+.chapter-list-wrap li {
+  font: 14px/36px PingFangSC-Regular,'-apple-system',Simsun;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  white-space: nowrap;
+  border-top: 1px solid #e6e6e6
+}
+.chapter-list-wrap li:first-child {
+  border-top: none
+}
+.chapter-list-wrap li.disabled label {
+  cursor: default;
+  color: #a6a6a6
+}
+.chapter-list-wrap li.disabled label:hover b {
+  color: #a6a6a6
+}
+.chapter-list-wrap li.disabled span {
+  cursor: default
+}
+.chapter-list-wrap li b,
+.chapter-list-wrap li cite,
+.chapter-list-wrap li em,
+.chapter-list-wrap li span,
+.chapter-list-wrap li strong {
+  display: inline-block;
+  vertical-align: middle
+}
+.chapter-list-wrap li b {
+  font-weight: 400;
+  overflow: hidden;
+  width: 588px;
+  margin-right: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.chapter-list-wrap li em {
+  overflow: hidden;
+  width: 56px;
+  height: 40px;
+  margin-right: 22px;
+  text-align: left
+}
+.chapter-list-wrap li cite,
+.chapter-list-wrap li em {
+  color: #666
+}
+.chapter-list-wrap li em.update-time {
+  width: 144px;
+  margin-right: 30px;
+  text-align: center
+}
+.chapter-list-wrap li strong {
+  font-family: Arial;
+  font-size: 14px;
+  overflow: hidden;
+  width: 126px;
+  height: 40px;
+  text-align: center
+}
+.subscribe-wrap {
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 64px;
+  background-color: #f5f2e9
+}
+.subscribe-wrap .left-box {
+  font: 14px/1 PingFangSC-Regular,'-apple-system',Simsun;
+  margin-top: 24px
+}
+.subscribe-wrap .left-box label {
+  margin-right: 9px
+}
+.subscribe-wrap .left-box b {
+  font: 18px/1 Arial;
+  margin: 0 3px;
+  vertical-align: -1px;
+  color: var(--color-primary)
+}
+.subscribe-wrap .left-box i {
+  font-family: Arial;
+  margin: 0 5px
+}
+.subscribe-wrap .left-box cite {
+  font-family: Arial;
+  margin-right: 5px
+}
+.subscribe-wrap .right-box {
+  font: 14px/64px PingFangSC-Regular,'-apple-system',Simsun
+}
+.subscribe-wrap .right-box .box {
+  float: right;
+  margin-right: 20px;
+  text-align: right
+}
+.subscribe-wrap .right-box .box em,
+.subscribe-wrap .right-box .box span {
+  font: 22px/1 Arial;
+  display: inline-block;
+  margin: -1px 5px 0;
+  vertical-align: middle;
+  color: var(--color-primary)
+}
+.subscribe-wrap .right-box .box .table {
+  display: table;
+  height: 64px
+}
+.subscribe-wrap .right-box .box .table-cell {
+  display: table-cell;
+  vertical-align: middle
+}
+.subscribe-wrap .right-box .box p:first-child + p {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #bf2c24
+}
+.subscribe-wrap .right-box .box b {
+  font-family: Arial;
+  margin: 0 10px 0 5px
+}
+.subscribe-wrap .right-box .box2 {
+  float: right;
+  margin-right: 20px
+}
+.subscribe-wrap .right-box i {
+  float: right;
+  height: 24px;
+  margin: 20px 20px 0 0;
+  border-left: 1px solid #ccc;
+  border-left: 1px solid rgba(0,0,0,.1)
+}
+.subscribe-wrap .right-box .confirm,
+.subscribe-wrap .right-box .red-btn {
+  font: 16px/64px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  float: right;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0!important;
+  background-color: var(--color-primary)
+}
+.subscribe-wrap .right-box .confirm:hover,
+.subscribe-wrap .right-box .red-btn:hover {
+  background-color: var(--color-primary-ligher)
+}
+.subscribe-wrap .right-box .confirm.disabled,
+.subscribe-wrap .right-box .red-btn.disabled {
+  cursor: default;
+  border-color: #a6a6a6;
+  background: #a6a6a6
+}
+.go-top {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 84px;
+  width: 100%
+}
+.go-top .go-top-wrap {
+  width: 990px;
+  margin: 0 auto;
+  padding-left: calc(100vw - 100%)
+}
+.go-top .go-top-wrap .icon-go-top {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-left: 1014px;
+  text-align: center;
+  border-radius: 100%;
+  background: var(--sheet-background-bw-white);
+  box-shadow: 0 2px 5px #ccc
+}
+.go-top .go-top-wrap .icon-go-top .iconfont {
+  font-size: 18px;
+  line-height: 46px;
+  margin-left: 1px;
+  transition: color .3s;
+  color: #a6a6a6
+}
+.go-top .go-top-wrap .icon-go-top:hover .iconfont {
+  color: var(--color-primary)
+}
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+    opacity: 0
+  }
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+    opacity: 0
+  }
+}
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp
+}
+@media (min--moz-device-pixel-ratio:1.3),
+(-o-min-device-pixel-ratio:2.6 / 2),
+(-webkit-min-device-pixel-ratio:1.3),
+(min-device-pixel-ratio:1.3),
+(min-resolution:1.3dppx) {
+  .g_site_hongxiu .wrap-body .flower {
+    background-size: 100%
+  }
+  .g_site_hongxiu .wrap-body .flower.left {
+    background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/flower_left_2x.7a49b.png)
+  }
+  .g_site_hongxiu .wrap-body .flower.right {
+    background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/flower_right_2x.d93d2.png)
+  }
+  .fans-interact dd.dynamic-state .fans-info .avatar span {
+    background-image: url(/pro/hongxiu_pc/_prelease/images/ico/big_user_2x.f40bc.png);
+    background-size: 100%
+  }
+  .fans-interact dd.dynamic-state .no-data-box span {
+    width: 104px;
+    height: 62px;
+    background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite_2x.4d782.png);
+    background-repeat: no-repeat;
+    background-position: -87px 0;
+    background-size: 335px
+  }
+  .default-avatar {
+    background-image: url(/pro/hongxiu_pc/_prelease/images/ico/account.1e031.png)!important;
+    background-size: 100%
+  }
+}

@@ -1,0 +1,422 @@
+@charset 'UTF-8';
+.tip-state {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 32px
+}
+.tip-state h4 {
+  font: 18px/1 PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 55px
+}
+.tip-state h4 span {
+  font-family: Arial;
+  margin: 0 5px;
+  color: #bf2c24
+}
+.tip-state h4 cite {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  color: #666
+}
+.tip-state span {
+  display: block;
+  margin: 0 auto 18px
+}
+.tip-state span.ok {
+  width: 48px;
+  height: 48px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -249px -100px;
+  background-size: 335px
+}
+.tip-state span.error {
+  width: 48px;
+  height: 48px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -50px -222px;
+  background-size: 335px
+}
+.tip-state span.wait {
+  width: 48px;
+  height: 48px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -249px 0;
+  background-size: 335px
+}
+.loading-wrap {
+  padding-bottom: 44px
+}
+.loading-wrap .loading {
+  padding: 80px 0 0
+}
+.loading-wrap span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  background: url(/pro/hongxiu_pc/_prelease/images/common/loading.6bd87.gif) no-repeat
+}
+.loading-wrap p {
+  font: 14px/24px PingFangSC-Regular,'-apple-system',Simsun
+}
+.book-popup {
+  background: #fcfcfa
+}
+.book-popup .popup-title {
+  height: 39px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff
+}
+.book-popup .popup-title h3 {
+  font-size: 18px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 10px;
+  text-align: left;
+  color: #1a1a1a
+}
+.warning-tip {
+  font: 12px/30px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  z-index: 1;
+  top: -31px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  color: #bf2c24;
+  background: #fbd9de
+}
+.warning-tip p {
+  overflow: hidden;
+  padding: 0 10px
+}
+.warning-tip span {
+  float: left
+}
+.subscribe-popup {
+  padding-bottom: 24px
+}
+.subscribe-popup h4 {
+  font: 18px/1 PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif
+}
+.subscribe-popup h4 span {
+  font-family: Arial;
+  margin: 0 5px;
+  color: var(--color-primary)
+}
+.subscribe-popup .sub-content {
+  text-align: center
+}
+.subscribe-popup .sub-content .tip {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 52px
+}
+.subscribe-popup .sub-content .tip h4 {
+  margin: 0 0 10px 18px
+}
+.subscribe-popup .sub-content .tip p {
+  font-size: 14px;
+  margin-bottom: 52px;
+  color: #666
+}
+.subscribe-popup .sub-content .tip p span {
+  font-family: Arial;
+  margin: 0 5px;
+  color: var(--color-primary)
+}
+.subscribe-popup .sub-content .tip p i {
+  font-family: Arial;
+  margin: 0 3px
+}
+.subscribe-popup .sub-content .tip p em {
+  font-family: Arial;
+  margin: 0 5px
+}
+.exception-popup {
+  padding-bottom: 24px;
+  text-align: center
+}
+.exception-popup .code-wrap {
+  padding-top: 24px
+}
+.exception-popup h4 {
+  font: 18px/28px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  margin: 0 0 26px
+}
+.exception-popup .phone {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun;
+  margin-bottom: 15px;
+  color: #666
+}
+.exception-popup .phone span {
+  font-family: Arial;
+  margin: 0 5px
+}
+.exception-popup .phone .blue {
+  margin: 0 5px
+}
+.exception-popup .code-input-wrap {
+  position: relative;
+  z-index: 1;
+  width: 294px;
+  margin: 0 auto 32px
+}
+.exception-popup .code-input-wrap .tip {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: var(--color-primary)
+}
+.exception-popup .code-input-wrap input {
+  float: left;
+  width: 179px;
+  height: 32px;
+  padding-left: 5px;
+  border: 1px solid #e6e6e6
+}
+.exception-popup .code-input-wrap input.error {
+  border: 1px solid var(--color-primary);
+  background: #ffedf0
+}
+.exception-popup .code-input-wrap a {
+  font: 14px/34px PingFangSC-Regular,'-apple-system',Simsun;
+  float: right;
+  width: 100px;
+  height: 34px;
+  transition: none;
+  background: #e6e6e6
+}
+.exception-popup .code-input-wrap a:hover {
+  color: #222
+}
+.exception-popup .code-input-wrap a.disabled {
+  cursor: default;
+  color: #fff;
+  background: #a6a6a6
+}
+.exception-popup .confirm-wrap .icon-phone {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 32px auto 20px;
+  background-image: url(/pro/hongxiu_pc/_prelease/images/book_details/sprite.0133c.png);
+  background-repeat: no-repeat;
+  background-position: -249px -50px;
+  background-size: 335px
+}
+.exception-popup .confirm-wrap h5 {
+  font: 22px/29px PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+  margin: 0 0 55px
+}
+.select-popup .select-wrap {
+  overflow: hidden;
+  padding-bottom: 24px;
+  text-align: center
+}
+.select-popup .select-wrap .tip {
+  height: 40px;
+  background: #f7f6f2
+}
+.select-popup .select-wrap .tip p {
+  font: 14px/40px PingFangSC-Regular,'-apple-system',Simsun;
+  color: #6b3612
+}
+.select-popup .select-wrap .tip p em,
+.select-popup .select-wrap .tip p span {
+  font-family: Arial;
+  margin: 0 5px
+}
+.select-popup .select-wrap .tip p span {
+  color: #bf2c24
+}
+.select-popup .select-wrap .tip p i {
+  font-family: Arial;
+  margin: 0 5px
+}
+.select-popup .select-list {
+  padding: 40px 0 20px 40px
+}
+.select-popup .select-list li {
+  overflow: hidden;
+  margin-bottom: 10px
+}
+.select-popup .select-list li em {
+  font: 14px/32px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  min-width: 92px;
+  margin-right: 12px;
+  text-align: right;
+  color: #a6a6a6
+}
+.select-popup .select-list li p {
+  line-height: 32px;
+  float: left
+}
+.select-popup .select-list li p.mode a {
+  font: 14px/32px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  margin-left: 15px;
+  padding: 0 10px;
+  border: 1px solid #e6e6e6;
+  background: #fff
+}
+.select-popup .select-list li p.mode a:first-child {
+  margin-left: 0
+}
+.select-popup .select-list li p.mode a:hover {
+  color: #222
+}
+.select-popup .select-list li p.mode a.act {
+  color: #bf2c24;
+  border: 1px solid var(--color-primary);
+  background: #fff1f3
+}
+.select-popup .select-list li p.mode a.disabled {
+  cursor: default;
+  color: #bbb;
+  border: 1px solid #e6e6e6;
+  background: #e6e6e6
+}
+.select-popup .select-list li p b i {
+  font: 22px/32px Arial;
+  margin-right: 5px
+}
+.select-popup .select-list li p b strong {
+  font: 12px/1 PingFangSC-Regular,'-apple-system',Simsun
+}
+.select-popup .select-list li p b cite {
+  color: #a6a6a6
+}
+.select-popup .select-list li p span {
+  font: 22px/32px Arial;
+  margin-right: 5px;
+  vertical-align: -1px;
+  color: var(--color-primary)
+}
+.select-popup .select-list .select-tip {
+  font: 14px/19px PingFangSC-Regular,'-apple-system',Simsun;
+  margin-left: 104px;
+  color: #666
+}
+.select-popup .check-box-wrap {
+  margin-bottom: 20px
+}
+.select-popup .check-box-wrap span {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: -1px
+}
+.select-popup .check-box-wrap label {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun;
+  vertical-align: middle
+}
+.select-popup .check-box-wrap a {
+  font: 14px/20px PingFangSC-Regular,'-apple-system',Simsun
+}
+.scan-wrap {
+  padding-bottom: 42px;
+  text-align: center
+}
+.scan-wrap .switch {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  display: block;
+  margin: 22px 0 19px;
+  color: #a6a6a6
+}
+.scan-wrap .switch:hover {
+  color: var(--color-primary)
+}
+.scan-wrap .switch .iconfont {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle
+}
+.scan-wrap .price {
+  font: 14px/36px PingFangSC-Regular,'-apple-system',Simsun;
+  margin-bottom: 12px
+}
+.scan-wrap .price span {
+  font: 32px/36px Arial;
+  margin-right: 5px;
+  vertical-align: -2px;
+  color: var(--color-primary)
+}
+.scan-wrap .pay-qr-code {
+  margin-bottom: 20px
+}
+.scan-wrap .pay-qr-code img {
+  width: 120px;
+  height: 120px
+}
+.scan-wrap .scan-bottom {
+  width: 130px;
+  margin: 0 auto
+}
+.scan-wrap .scan-bottom span {
+  float: left;
+  margin: 2px 10px 0 0
+}
+.scan-wrap .scan-bottom .tip {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  float: left;
+  text-align: left;
+  color: #a6a6a6
+}
+.scan-wrap .scan-bottom .tip .red {
+  margin-left: 5px
+}
+.eva-star-wrap {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 36px 0 24px
+}
+.eva-star-wrap .eva-box {
+  width: 440px;
+  margin: 0 auto
+}
+.eva-star-wrap h4 {
+  font: 12px/16px PingFangSC-Regular,'-apple-system',Simsun;
+  margin-bottom: 10px;
+  color: grey
+}
+.eva-star-wrap .star-big {
+  overflow: hidden;
+  height: 32px;
+  margin-bottom: 20px
+}
+.eva-star-wrap .star-big em,
+.eva-star-wrap .star-big span {
+  float: left
+}
+.eva-star-wrap .star-big img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px
+}
+.eva-star-wrap .star-big em {
+  font: 14px/19px PingFangSC-Regular,'-apple-system',Simsun;
+  margin-top: 8px
+}
+.eva-star-wrap .count-text {
+  height: 112px
+}
+.eva-star-wrap .count-text textarea {
+  height: 84px
+}
+.eva-star-wrap .count-text textarea.gray {
+  color: #a6a6a6
+}
