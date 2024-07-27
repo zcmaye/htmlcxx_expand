@@ -1,7 +1,7 @@
 # htmlcxx_expand
 htmlcxx_expand是一个HTML解析器，支持xpath，可以很方便的解析HTML。
 
-+ xpath解析部分参考了[charto/cxml](https://github.com/charto/cxml)，并进行了修改
++ xpath解析部分参考了[charto/cxml](https://github.com/CodeCat-maker/cxml)，并进行了修改
 + html解析部分使用了[htmlcxx](https://htmlcxx.sourceforge.net/)
 
 # 构建

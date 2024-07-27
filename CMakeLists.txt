@@ -18,6 +18,8 @@ file(GLOB XPATH_SOURCES "src/xpath/*.cpp")
 
 include_directories("src/html" "src/xpath")
 
+add_compile_definitions(PROJECT_PATH="${CMAKE_CURRENT_SOURCE_DIR}")
+
 add_library(htmlcxx_expand ${HTML_SOURCES} ${XPATH_SOURCES})
 
 target_include_directories(htmlcxx_expand
