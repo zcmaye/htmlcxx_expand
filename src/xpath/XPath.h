@@ -20,8 +20,8 @@ namespace htmlcxx
 		/**
 		 * 遍历m_node的所有子节点.
 		 */
-		pre_order_iterator  begin()const { return m_node; }
-		pre_order_iterator  end()const { return ++iterator(m_node); }
+		auto begin()const { return m_its.begin(); }
+		auto end()const { return m_its.end(); }
 
 		/**
 		 * 遍历父节点的所有子节点(也就是m_node的兄弟节点).
@@ -101,6 +101,7 @@ namespace htmlcxx
 		iterator get_node_from_child_by_name(const std::string& name, iterator root);
 		//选择当前元素后代元素中的name元素
 		std::vector<iterator> get_node_from_genera_by_name(const std::string& name, iterator root);
+
 		std::string get_attr_from_this(const std::string& name, iterator root);
 		//将操作入队 双指针算法入队
 		bool get_option(const std::string& exp);

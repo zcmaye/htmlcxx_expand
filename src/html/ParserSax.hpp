@@ -1,7 +1,7 @@
 ﻿#include <cctype>
 #include <cstring>
 #if !defined(WIN32) || defined(__MINGW32__)
-//#include <strings.h>
+#include <strings.h>
 #endif
 
 #include "maye_define.h"
@@ -46,7 +46,7 @@ void htmlcxx::HTML::ParserSax::parse(_Iterator &begin, _Iterator &end, std::forw
 
 	while (begin != end)
 	{
-		*begin; // This is for the multi_pass to release the buffer
+		(void)(*begin); // This is for the multi_pass to release the buffer
 		iterator c(begin);
 
 		while (c != end)
@@ -131,6 +131,7 @@ void htmlcxx::HTML::ParserSax::parse(_Iterator &begin, _Iterator &end, std::forw
 							this->parseContent(begin, c);
 
 //						DEBUGP("Parsing beginning of tag\n");
+
 						d = this->skipHtmlTag(d, end);
 						this->parseHtmlTag(c, d);
 
@@ -259,6 +260,7 @@ void htmlcxx::HTML::ParserSax::parseContent(_Iterator b, _Iterator c)
 	//FIXME: set_tagname shouldn't be needed, but first I must check
 	//legacy code
 	std::string text(b, c);
+
 	txt_node.tagName(text);
 	txt_node.text(text);
 	txt_node.offset(mCurrentOffset);
@@ -288,6 +290,9 @@ void htmlcxx::HTML::ParserSax::parseHtmlTag(_Iterator b, _Iterator c)
 
 	std::string name(name_begin, name_end);
 //	DEBUGP("Found %s tag %s\n", is_end_tag ? "closing" : "opening", name.c_str());
+
+	//skip empty
+	static int i = 0;
 
 	if (!is_end_tag) 
 	{

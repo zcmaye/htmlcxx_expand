@@ -1,4 +1,4 @@
-#ifndef __HTML_PARSER_SAX_H__
+﻿#ifndef __HTML_PARSER_SAX_H__
 #define __HTML_PARSER_SAX_H__
 
 #include <string>
@@ -60,6 +60,6 @@ namespace htmlcxx
 	}//namespace HTML
 }//namespace htmlcxx
 
-#include "ParserSax.tcc"
+#include "ParserSax.hpp"
 
 #endif

@@ -1,8 +1,9 @@
-#include "ParserDom.h"
+﻿#include "ParserDom.h"
 #include "wincstring.h"
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 //#define DEBUG
 #include "debug.h"
@@ -46,11 +47,27 @@ void ParserDom::foundComment(Node node)
 void ParserDom::foundText(Node node)
 {
 	//Add child content node, but do not update current state
-	mHtmlTree.append_child(mCurrentState, node);
+	//mHtmlTree.append_child(mCurrentState, node);
+
+	auto& text = node.text();
+	//跳过空的内容
+	static int i = 0;
+	auto counter = std::count_if(text.begin(), text.end(), [](char c) {
+			return !!isspace(c);
+			//return c == ' ';
+		});
+	if (counter == text.size()) {
+		//printf("content: empty %d %lld %llu\n", i++,counter,text.size());
+		return;
+	}
+
+	//把内容放进对应的标签
+	mCurrentState->content(node.text());
 }
 
 void ParserDom::foundTag(Node node, bool isEnd)
 {
+	node.parseAttributes();
 	if (!isEnd) 
 	{
 		//append to current tree node
@@ -65,6 +82,8 @@ void ParserDom::foundTag(Node node, bool isEnd)
 		// matches
 		vector< tree<HTML::Node>::iterator > path;
 		tree<HTML::Node>::iterator i = mCurrentState;
+		//if (i->tagName() == node.tagName() && node.text().at(1) == '/')
+		//	mCurrentState = mHtmlTree.parent(mCurrentState);
 		bool found_open = false;
 		while (i != mHtmlTree.begin())
 		{

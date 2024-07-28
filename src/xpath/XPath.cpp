@@ -122,9 +122,9 @@ namespace htmlcxx
         auto closePos = root->offset() + root->length() - root->closingText().size();
 
         //跳过BOM头
-        if (off == 0 && m_html.compare(0,3,"\xEF\xBB\xBF") == 0) {
-            off += 3;
-        }
+        //if (off == 0 && m_html.compare(0,3,"\xEF\xBB\xBF") == 0) {
+        //    off += 3;
+        //}
         //跳过空格
         while (m_html[off] == ' ') { ++off; }
         //while (m_html[closePos] == ' ') { --closePos; }
@@ -325,6 +325,16 @@ namespace htmlcxx
             if (it->tagName() == tmp_name)
             {
                 i++;
+                //
+                it->parseAttributes();
+                if (it->attribute("class").second == "book-info")
+                {
+                    printf("wait...\n");
+                }
+                if (it->attribute("class").second == "guide-container")
+                {
+                    printf("wait...\n");
+                }
                 if (i == j)
                     return it;
             }
@@ -347,41 +357,7 @@ namespace htmlcxx
 
     // 选择当前元素后代元素中的name元素
     //-- //title[@lang='eng'] 选取所有 title 元素，且这些元素拥有值为 eng 的 lang 属性。
-    /*iterator XPath::get_node_from_genera_by_name(const std::string& name, iterator root)
-    {
-        CHECK(root, nullptr);
-        CHECK_NODE_NAME(name, {});
-
-        std::string attr_name = get_attr_name(name);
-        std::string value_name = get_attr_value(name); 
-        std::string node_name =  get_node_name(name);
-
-
-        // 有属性的情况
-        //-- //*[@id="chapter-50733113105954003"];
-        if (name.find('@') != std::string::npos)
-        {
-            return get_node_by_attrValue(name, root);
-        }
-        // 没有属性的情况
-        // 遍历树
-        tree<HTML::Node>::pre_order_iterator begin(root);
-        //tree<HTML::Node>::pre_order_iterator end = m_tree.end(); // (nullptr);
-        tree<HTML::Node>::pre_order_iterator end(++root);
-        for (auto it = begin; it != end; it++)
-        {
-            if (it->isTag())
-            {
-                if (it->tagName() == name)
-                {
-                    // std::cout << it->tagName() << "  " << getNodeContent(*it) << std::endl;
-                    return it;
-                }
-            }
-        }
-        return nullptr;
-    }*/
-	std::vector<iterator> XPath::get_node_from_genera_by_name(const std::string& name, iterator root)
+ 	std::vector<iterator> XPath::get_node_from_genera_by_name(const std::string& name, iterator root)
     {
         CHECK(root, {});
         CHECK_NODE_NAME(name, {});
@@ -422,7 +398,7 @@ namespace htmlcxx
 	}
 	std::string XPath::get_attr_from_this(const std::string& name, iterator root)
     {
-        CHECK(root, nullptr);
+        CHECK(root, {});
         CHECK_NODE_NAME(name, {})
 
         std::string attr_name = name.substr(name.find("@") + 1);
@@ -496,17 +472,22 @@ namespace htmlcxx
                 break;
             case str2int("get_node_by_array_and_name"):
                 result.m_node = get_node_by_array_and_name(name, result.m_node);
+                result.m_its = {result.m_node};
                 break;
             case str2int("get_node_by_attr_and_name"):
                 result.m_node = get_node_by_attr_and_name(name, result.m_node);
+                result.m_its = {result.m_node};
                 break;
             case str2int("get_node_by_attrValue_and_name"):
                 result.m_node = get_node_by_attrValue(name, result.m_node);
+                result.m_its = {result.m_node};
                 break;
             case str2int("get_text_from_this"):
                 ret_text = get_text_from_this(result.m_node);
-                result.m_texts.push_back(ret_text);
-				//result.m_its = { result.m_node};
+                //result.m_texts.push_back(ret_text);
+                for (auto& node : result.m_its) {
+                    result.m_texts.push_back(node->content());
+                }
                 result.m_its.clear();
                 result.m_node = nullptr;
                 return true;
@@ -519,9 +500,11 @@ namespace htmlcxx
                 return true;
             case str2int("get_this_node"):
                 result.m_node = get_this_node(result.m_node);
+                result.m_its = {result.m_node};
                 break;
             case str2int("get_parent_node"):
                 result.m_node = get_parent_node(result.m_node);
+                result.m_its = {result.m_node};
                 break;
             case str2int("get_attr_from_this"):
                 ret_text = get_attr_from_this(name, result.m_node);
