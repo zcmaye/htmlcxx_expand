@@ -15,7 +15,7 @@ https://github.com/zcmaye/htmlcxx_expand.git
 2. 进入源码目录
 
 ```shell
-cd HtmlCxx_expand
+cd htmlcxx_expand
 ```
 
 3. 执行cmake指令
@@ -36,11 +36,11 @@ cmake --build build --target INSTALL --config "Release"		# Release
 
 ```shell
   -- Install configuration: "Release"
-  -- Installing: C:/Program Files (x86)/CppHtml_expand/include/html/Extensions.h
-  -- Installing: C:/Program Files (x86)/CppHtml_expand/include/html/Node.h
-  -- Installing: C:/Program Files (x86)/CppHtml_expand/include/html/ParserDom.h
-  -- Installing: C:/Program Files (x86)/CppHtml_expand/include/html/ParserSax.h
-  -- Installing: C:/Program Files (x86)/CppHtml_expand/include/html/Uri.h
+  -- Installing: C:/Program Files (x86)/htmlcxx_expand/include/html/Extensions.h
+  -- Installing: C:/Program Files (x86)/htmlcxx_expand/include/html/Node.h
+  -- Installing: C:/Program Files (x86)/htmlcxx_expand/include/html/ParserDom.h
+  -- Installing: C:/Program Files (x86)/htmlcxx_expand/include/html/ParserSax.h
+  -- Installing: C:/Program Files (x86)/htmlcxx_expand/include/html/Uri.h
 ```
 
 ## 使用
