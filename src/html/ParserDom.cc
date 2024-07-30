@@ -62,7 +62,9 @@ void ParserDom::foundText(Node node)
 	}
 
 	//把内容放进对应的标签
-	mCurrentState->content(node.text());
+	if (mCurrentState != nullptr) {
+		mCurrentState->appendContent(node.text());
+	}
 }
 
 void ParserDom::foundTag(Node node, bool isEnd)

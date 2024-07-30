@@ -33,7 +33,7 @@ if(NOT BUILD_SHARED_LIBS)
   target_compile_definitions(htmlcxx_expand PUBLIC "CPPHTML_STATIC")
 endif()
 
-install(FILES ${HTML_HEADERS} "src/html/ParserSax.tcc" ${XPATH_HEADERS} DESTINATION include/html)
+install(FILES ${HTML_HEADERS} "src/html/ParserSax.hpp" ${XPATH_HEADERS} DESTINATION include/html)
 install(FILES ${XPATH_HEADERS} DESTINATION include/xpath)
 install(TARGETS htmlcxx_expand RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
 

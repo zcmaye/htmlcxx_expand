@@ -2,8 +2,9 @@
 #define __HTML_PARSER_NODE_H
 
 #include <map>
+#include <vector>
 #include <string>
-#include <utility>
+//#include <utility>
 
 namespace htmlcxx {
 	namespace HTML
@@ -16,8 +17,13 @@ namespace htmlcxx {
 				~Node() {}
 
 				/** 标签内容 */
-				inline const std::string& content() const { return this->mContent; }
-				inline void content(const std::string& content) { this->mContent= content; }
+				inline const std::string& content() const { return mContents.empty() ? "" : this->mContents.front(); }
+				inline void content(const std::string& content) { this->mContents.push_back(content); }
+
+				inline const std::vector<std::string>& contents() const { return this->mContents; }
+				inline void appendContent(const std::string& content) {
+					mContents.push_back(content); 
+				}
 
 				/** 开始标签完整文本(<a href="xxxxx">) */
 				inline const std::string& text() const { return this->mText; }
@@ -48,7 +54,7 @@ namespace htmlcxx {
 				bool isComment() const { return this->mComment; }
 
 				/** 判断是不是文本节点(文本节点也有可能是标签节点，包含文本的节点就是文本节点) */
-				bool isContent() const { return !mContent.empty(); }
+				bool hasContent() const { return !mContents.empty(); }
 
 				std::pair<bool, std::string> attribute(const std::string &attr) const
 				{ 
@@ -72,7 +78,7 @@ namespace htmlcxx {
 				bool operator==(const Node &rhs) const;
 
 			protected:
-				std::string mContent;									/*!> 节点内容*/
+				std::vector<std::string> mContents;						/*!> 节点内容*/
 				std::string mText;										/*!> 标签完整文本(<a href="xxxxx">)*/
 				std::string mClosingText;								/*!> 结尾标签文本(</a>)*/
 				unsigned int mOffset;									/*!> 标签在文档中的偏移量*/
