@@ -4,7 +4,6 @@
 #include <map>
 #include <vector>
 #include <string>
-//#include <utility>
 
 namespace htmlcxx {
 	namespace HTML
@@ -17,7 +16,7 @@ namespace htmlcxx {
 				~Node() {}
 
 				/** 标签内容 */
-				inline const std::string& content() const { return mContents.empty() ? "" : this->mContents.front(); }
+				inline std::string content() const { return mContents.empty() ? "" : this->mContents.front(); }
 				inline void content(const std::string& content) { this->mContents.push_back(content); }
 
 				inline const std::vector<std::string>& contents() const { return this->mContents; }

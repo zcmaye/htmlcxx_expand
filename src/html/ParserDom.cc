@@ -5,7 +5,6 @@
 #include <vector>
 #include <algorithm>
 
-//#define DEBUG
 #include "debug.h"
 
 #define TAG_NAME_MAX 10
@@ -62,9 +61,8 @@ void ParserDom::foundText(Node node)
 	}
 
 	//把内容放进对应的标签
-	if (mCurrentState != nullptr) {
-		mCurrentState->appendContent(node.text());
-	}
+	mCurrentState->appendContent(node.text());
+	mHtmlTree.append_child(mCurrentState, node);
 }
 
 void ParserDom::foundTag(Node node, bool isEnd)
@@ -90,8 +88,8 @@ void ParserDom::foundTag(Node node, bool isEnd)
 		while (i != mHtmlTree.begin())
 		{
 #ifdef DEBUG
-			cerr << "comparing " << node.tagName() << " with " << i->tagName()<<endl<<":";
-			if (!i->tagName().length()) cerr << "Tag with no name at" << i->offset()<<";"<<i->offset()+i->length();
+			std::cerr << "comparing " << node.tagName() << " with " << i->tagName()<<endl<<":";
+			if (!i->tagName().length()) std::cerr << "Tag with no name at" << i->offset()<<";"<<i->offset()+i->length();
 #endif
 			assert(i->isTag());
 			assert(i->tagName().length());

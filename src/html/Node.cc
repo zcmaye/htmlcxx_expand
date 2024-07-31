@@ -15,6 +15,7 @@ using namespace HTML;
 void Node::parseAttributes() 
 {
 	if (!(this->isTag())) return;
+	if (!this->attributes().empty()) return;
 
 	const char *end;
 	const char *ptr = mText.c_str();

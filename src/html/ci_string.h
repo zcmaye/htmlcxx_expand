@@ -1,4 +1,4 @@
-#ifndef __CI_STRING__
+﻿#ifndef __CI_STRING__
 #define __CI_STRING__
 
 #include <cctype>
@@ -24,7 +24,7 @@ struct ci_char_traits : public std::char_traits<char>
 	static int compare( const char* s1,
 			const char* s2,
 			size_t n ) {
-		#ifdef WIN32
+		#ifdef _WIN32
 		return _strnicmp(s1, s2, n);
 		#else
 		return strncasecmp( s1, s2, n );

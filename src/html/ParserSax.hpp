@@ -6,8 +6,7 @@
 
 #include "maye_define.h"
 
-//#define DEBUG
-//#include "debug.h"
+#include "debug.h"
 
 static
 struct literal_tag {
@@ -301,7 +300,7 @@ void htmlcxx::HTML::ParserSax::parseHtmlTag(_Iterator b, _Iterator c)
 		{
 			if (tag_len == literal_mode_elem[i].len)
 			{
-                                #if defined(WIN32) && !defined(__MINGW32__)
+                #if defined(_WIN32) && !defined(__MINGW32__)
 				if (!_stricmp(name.c_str(), literal_mode_elem[i].str))
 				#else
 				if (!strcasecmp(name.c_str(), literal_mode_elem[i].str))

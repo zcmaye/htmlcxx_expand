@@ -1,4 +1,4 @@
-#include "Uri.h"
+﻿#include "Uri.h"
 
 #include "wincstring.h"
 #include <sstream>
@@ -6,7 +6,6 @@
 #include <cassert>
 #include "tld.h"
 
-//#define DEBUG
 #include "debug.h"
 
 using namespace std;

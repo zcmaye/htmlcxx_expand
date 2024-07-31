@@ -1,9 +1,9 @@
-#ifndef __WINCSTRING_H__
+﻿#ifndef __WINCSTRING_H__
 #define __WINCSTRING_H__
 
 #include <cstring>
 
-#if defined(WIN32) && !defined(__MINGW32__)
+#if defined(_WIN32) && !defined(__MINGW32__)
 
 /*
  * some functions have strange names on windows
